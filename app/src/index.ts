@@ -21,4 +21,6 @@ app.get("/admin", (req: Request, res: Response) =>
   )
 );
 
-app.listen(9999, () => console.log(`${appId} is listening on localhost:9999`));
+app.listen(appId, () =>
+  console.log(`${appId} is listening on http://localhost:${appId}`)
+);

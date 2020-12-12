@@ -1,3 +1,5 @@
 FROM node:12
 WORKDIR /home/node/app
-COPY 
+COPY  app /home/node/app
+RUN npm install 
+CMD npm start
